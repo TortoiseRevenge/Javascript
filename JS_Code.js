@@ -1,2 +1,4 @@
-answer = prompt("Please enter your name.");
-console.log("Your name is " + answer);
+let w = prompt("Width?");
+let l = prompt("Length?");
+let h = prompt("Height?");
+console.log("Volume " + w*l*h);
