@@ -1,2 +1,6 @@
-answer = prompt("Please enter your name.");
-console.log("Your name is " + answer);
+width = prompt("enter width");
+height = prompt("enter height");
+length = prompt("enter length");
+
+volume = width * height * length
+console.log("the volume is: " + volume);
