@@ -2,9 +2,11 @@ let numOfNames = parseInt(prompt("how many friends do you have"));
 if (numOfNames>0){
     let firstNames = [];
     let lastNames = [];
+    let tempName = [];
     for (let i = 0;i<numOfNames;i++){
-        firstNames.push(prompt("enter first name of person " + (i+1)));
-        lastNames.push(prompt("enter last name of person " + (i+1)));
+        let tempName = (prompt("enter first name of person " + (i+1)).split(" "));
+        firstNames.push(tempName[0]);
+        lastNames.push(tempName[1])
     }
     let longestLength = 0;
     let shortestLength = 999;
